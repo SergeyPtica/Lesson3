@@ -12,7 +12,7 @@ public class TestTax {
         t.state="NJ";
 
         double yourTax=t.calcTax(); // revoke calcTax from Tax class
-        double totalTax = t.adjustForStudents(yourTax);
+        double totalTax = t.adjustForStudents(yourTax); // revoke from NJTax class
         System.out.println("Your tax is " + yourTax);
         System.out.println("Your total tax is " + totalTax);
     }
