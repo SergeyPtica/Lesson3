@@ -11,7 +11,7 @@ public class TestTax {
         t.dependents=2;
         t.state="NJ";
 
-        double yourTax=t.calcTax();
+        double yourTax=t.calcTax(); // revoke calcTax from Tax class
         double totalTax = t.adjustForStudents(yourTax);
         System.out.println("Your tax is " + yourTax);
         System.out.println("Your total tax is " + totalTax);
